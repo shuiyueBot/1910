@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-hello php!!!
+Route::get("/redis","index\GoodsController@redis1");
