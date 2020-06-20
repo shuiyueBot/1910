@@ -14,5 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-hello php!!!
+Route::get('/phpinfo',function(){
+	echo phpinfo();
+});
+Route::get('/redis','index\GoodsController@redis1');
